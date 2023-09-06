@@ -1,0 +1,29 @@
+h1{
+    color: red;
+}
+
+body{
+    background-color: rgba(255,228,225, 0.9);
+}
+
+span{
+    font-weight: bold;
+}
+
+#playerScore{
+    color: blue;
+}
+
+#computerScore{
+    color: red;
+}
+
+#finalResults{
+    color: brown;
+}
+
+#results{
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+}
