@@ -4,26 +4,41 @@
   <head>
     <meta charset="utf-8" />
     <title>Rock Paper Scissors Game</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />  
+    <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
 
   <body>
+
+<div class="game-container">
     <h1>Rock Paper Scissors Game</h1>
 
-    <p>
-      <span>Player's Score:</span>
-      <span id="playerScore">0</span>
-    </p>
+    <div class="results">
+      <div>
+        <span>Player's Score:</span>
+        <span id="playerScore">0</span>
+      </div>
+      <br />
 
-    <p>
-      <span>Computer's Score:</span>
-      <span id="computerScore">0</span>
-    </p>
+      <div>
+        <span>Computer's Score:</span>
+        <span id="computerScore">0</span>
+      </div>
+      <br />
 
-    <p>
-      <span>Winner:</span>
-      <span id="finalResults">None!</span>
-    </p>
+      <div>
+        <span>Winner:</span>
+        <span id="finalResults">None!</span>
+      </div>
+      <br />
+    </div><br>
+
+    <div class="btns">
+      <button id="rock" class="rock">	&#129704</button>
+      <button id="paper" class="paper">&#x1F5CB</button>
+      <button id="scissors" class="scissors">&#9986</button>
+    </div>
+
+    </div>
 
     <p id="playerOutput"></p>
     <p id="computerOutput"></p>

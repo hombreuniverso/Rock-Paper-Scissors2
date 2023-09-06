@@ -1,16 +1,19 @@
 //TOP's Suggestions Incorporated
 
+/*
 //Create prompt to get number of rounds from the user
 const gameNum = prompt("Enter how many rounds you wish to play.");
 //console.log(Number(gameNum));
+*/
 
+/*
 //Error checking of user amount
 if(isNaN(gameNum) || gameNum === ""){
   alert("Please enter a number!");
 }else if(gameNum === null){
   alert("You exited the game!")
- 
 }
+*/
 
 //Create variables to store querySelector values
 const playerOutput = document.querySelector("#playerOutput");
@@ -19,9 +22,10 @@ const results = document.querySelector("#results");
 const pScoreTag = document.querySelector("#playerScore");
 const cScoreTag = document.querySelector("#computerScore");
 const finalResultsTag = document.querySelector("#finalResults");
+const btns = document.querySelectorAll('button');
 
 
-
+btns.forEach(btn => btn.addEventListener('click', playRound))
 //Create boolean playGame to play or exit game
 let playGame = true;
 
@@ -33,21 +37,22 @@ let counter = 0;
 
 //Call functions
 //Call game
-game();
+//game();
 
 //Create Functions
+/*
 //Function: Play game multiple times
 function game() {
  
   for(i = 1; i <= Number(gameNum) ; i++){
     playRound()    
  //console.log(i);
-  
 }
 }
+*/
 
 //Function: Play round
-function playRound() {
+function playRound(e) {
   //Create variables for player and computer choices to get to compareSelections
   playerSelection = getPlayerInput();
   computerSelection = getComputerChoice();
@@ -62,9 +67,11 @@ function playRound() {
   //Function: getPlayerInput
   //Get input/ choice of player
   function getPlayerInput() {
+    let playerInput = e.target.id;
+    //console.log(e)
     //Use prompt to get user input
-    let playerInput = prompt("Type: 'rock' or 'paper', or 'scissors'.", "");
-
+    //let playerInput = prompt("Type: 'rock' or 'paper', or 'scissors'.", "");
+/*
     //Function: Error checking of input
     //Give message for cancel and no input
     if (playerInput === null) {
@@ -82,7 +89,9 @@ function playRound() {
       ) {
         results.textContent = "Please enter 'rock' or 'paper' or 'scissors'!";
       }
+      
     }
+    */
     return playerInput;
   }
 
