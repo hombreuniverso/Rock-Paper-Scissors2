@@ -14,17 +14,39 @@ body {
   border: 3px solid blue;
 }
 
+.headings{
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
 h1 {
+ margin: 0;
   color: red;
 }
 
+
+h2 {
+  margin: 0;
+  color: blue;
+}
+
 .results {
-    margin-top: 20px;
-  width: 375px;
-  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 440px;
+  height: 130px;
   border: blue 1px solid;
   padding: 10px;
   background-color: rgba(255, 0, 0, 0.1);
+  
+}
+
+#winner{
+  visibility: hidden;
 }
 
 .btns {
@@ -33,6 +55,24 @@ h1 {
   align-items: center;
   gap: 45px;
 }
+
+.play-cancel{
+  display: flex;
+  gap: 50px;
+}
+
+ #play-btn, #cancel-btn {
+  background-color: yellow;
+  color: blue;
+  font-size: 18px;
+  font-weight: bold;
+  width: auto;
+  height: 30px;
+  border-radius: 10px;
+  box-shadow: 3px 3px rgba(0, 0, 255, 0.5);
+ 
+}
+
 
 button {
   width: 100px;

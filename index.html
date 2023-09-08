@@ -10,9 +10,13 @@
   <body>
 
 <div class="game-container">
+  <div class="headings">
     <h1>Rock Paper Scissors Game</h1>
-
+    <h2>5 Rounds</h2>
+    </div>
+    
     <div class="results">
+      <div class="results-left">
       <div>
         <span>Player's Score:</span>
         <span id="playerScore">0</span>
@@ -26,16 +30,33 @@
       <br />
 
       <div>
+        <span>Draw:</span>
+        <span id="draw">0</span>
+      </div>
+      <br />
+
+      <div id="winner">
         <span>Winner:</span>
         <span id="finalResults">None!</span>
       </div>
-      <br />
+      </div>
+
+      <div class="results-right">
+        <span>Remaining:</span>
+        <span id="rounds-left">5</span>
+      </div>
+     
     </div><br>
 
     <div class="btns">
       <button id="rock" class="rock">	&#129704</button>
       <button id="paper" class="paper">&#x1F5CB</button>
       <button id="scissors" class="scissors">&#9986</button>
+    </div><br>
+
+    <div class="play-cancel">
+      <button id="play-btn">Play</button>
+      <button id="cancel-btn">Cancel</button>
     </div>
 
     </div>
@@ -44,6 +65,6 @@
     <p id="computerOutput"></p>
     <p id="results"></p>
 
-    <script src="script2.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
